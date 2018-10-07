@@ -8,6 +8,7 @@ function CarFactory(Vname) {
   };
   const Car = Object.assign({
     wheels: 4}, Vehicle);
+    
   const Motorcycle = Object.assign({
     wheels: 2, wheelie: () => {console.log('Wheelie!!');}}, Vehicle);
 }
