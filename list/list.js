@@ -11,10 +11,11 @@ class List {
    * Add item to the end of the list
    * @param item
    */
-  push(item) {
+  push(arr) {
     // Add an item to the end
-    this.data[this.length] = item;
+    this.returnData[this.length] = arr;
     this.length++;
+    return returnData;
   }
 
   /**
@@ -28,6 +29,20 @@ class List {
     return returnValue;
   }
 
-}
+  shift(arr) {
+    const firstValue = this.arr[0];
+    delete this.arr[0];
+    this.length--;
+    return firstValue;
+  }
+  unshift(inputArray, ...arr) {
+    const unshiftItems = arr;
+    const unshiftAmount = arr.length;
+    for (let i = 0; i < unshiftAmount; i++) {
+     }
+    
+} 
+  splice(index, amount, value) {
+  }
 
 module.exports = List;
